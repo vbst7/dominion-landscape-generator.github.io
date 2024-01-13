@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dominion Landscape Randomizer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="type-select">
+            <label><input type="number", value='1', min='0'> Events</label><label><input type="checkbox"> Surprise me!</label><br>
+            <label><input type="number", value='1', min='0'> Landmarks</label><label><input type="checkbox"> Surprise me!</label><br>
+            <label><input type="number", value='0', min='0'> Projects</label><label><input type="checkbox"> Surprise me!</label><br>
+            <label><input type="number", value='0', min='0'> Ways</label><label><input type="checkbox"> Surprise me!</label>
+        </div>
+        <div class="component-checkboxes">
+            <label><input type="checkbox", checked = true> Debt Tokens (Empires)</label>
+            <label><input type="checkbox", checked = true> Victory Tokens</label>
+            <label><input type="checkbox", checked = true> Adventures Tokens</label>
+            <label><input type="checkbox", checked = true> Exile Mat (Menagerie)</label>
+            <label><input type="checkbox"> Loot Cards (Plunder)</label>
+            <label><input type="checkbox", checked = true> Villagers (Renaissance)</label>
+            <label><input type="checkbox", checked = true> Coffers (Renaissance)</label>
+            <label><input type="checkbox"> Horse Cards (Menagerie)</label>
+        </div>
+        <label><input type="number", value='2', min='0'> Total Cards</label><br>
+        <button id="submit_button" style="margin-bottom: 50px;">Randomize</button>
+        <div id="card_div"></div>
+    </div>
+
+    <script src="Landscape.js"></script>
+</body>
+
+</html>
